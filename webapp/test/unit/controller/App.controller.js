@@ -13,4 +13,10 @@ sap.ui.define([
 		assert.ok(oAppController);
 	});
 
+	QUnit.test("Test match functions", function (assert) {
+		assert.strictEqual("A", "A", "A matches A");
+		assert.strictEqual("B", "B", "B matches B");
+		assert.strictEqual("C", "C", "C matches C");
+	});
+
 });
