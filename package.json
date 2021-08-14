@@ -16,6 +16,7 @@
 		"build": "ui5 build -a --clean-dest --include-task=generateManifestBundle generateCachebusterInfo",
 		"deploy": "fiori verify",
 		"deploy-config": "fiori add deploy-config",
+		"test": "karma start",
 		"unit-tests": "fiori run --open test/unit/unitTests.qunit.html",
 		"int-tests": "fiori run --open test/integration/opaTests.qunit.html"
 	},
