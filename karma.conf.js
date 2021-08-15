@@ -27,7 +27,8 @@ module.exports = function(config) {
    
       browsers: ["ChromeHeadless"],
 
-      singleRun: true
-      
+      singleRun: true,
+
+      failOnEmptyTestSuite: false
     });
 };
