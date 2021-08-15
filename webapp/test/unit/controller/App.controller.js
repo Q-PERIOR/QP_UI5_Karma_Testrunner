@@ -19,4 +19,8 @@ sap.ui.define([
 		assert.strictEqual("C", "C", "C matches C");
 	});
 
+	QUnit.test("Test match functions", function (assert) {
+		assert.strictEqual("D", "E", "D matches D");
+	});
+
 });
