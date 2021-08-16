@@ -1,4 +1,4 @@
-## Application Details
+## Application Details - Test CI
 |               |
 | ------------- |
 |**Generation Date and Time**<br>Thu Aug 12 2021 15:59:54 GMT+0200 (Mitteleuropäische Sommerzeit)|
