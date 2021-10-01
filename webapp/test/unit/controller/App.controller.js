@@ -20,7 +20,7 @@ sap.ui.define([
 	});
 
 	QUnit.test("Test match functions", function (assert) {
-		assert.strictEqual("D", "E", "D matches D");
+		assert.strictEqual("D", "D", "D matches D");
 	});
 
 });
