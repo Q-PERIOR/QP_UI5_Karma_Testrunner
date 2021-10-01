@@ -1,21 +1,14 @@
-## Application Details - From Azure
+## Application Details
 |               |
 | ------------- |
-|**Generation Date and Time**<br>Thu Aug 12 2021 15:59:54 GMT+0200 (Mitteleuropäische Sommerzeit)|
+|**Generation Date and Time**<br>Thu Aug 12 2021
 |**App Generator**<br>@sap/generator-fiori|
 |**App Generator Version**<br>1.3.0|
 |**Generation Platform**<br>Visual Studio Code|
-|**Floorplan Used**<br>simple|
 |**Service Type**<br>None|
-|**Service URL**<br>N/A
-|**Module Name**<br>firstapp|
-|**Application Title**<br>App Title|
-|**Namespace**<br>|
-|**UI5 Theme**<br>sap_fiori_3|
-|**UI5 Version**<br>Latest|
-|**Enable Telemetry**<br>True|
+|**Application Title**<br>UI5 App including Karma Testrunner|
 
-## firstapp
+## UI5-App including config for Karma testrunner 
 
 A Fiori application.
 
@@ -27,8 +20,34 @@ A Fiori application.
     npm start
 ```
 
-#### Pre-requisites:
+### Start the Karma testrunner
+
+```
+    npm test
+```
+or
+```
+    karma start
+```
+
+### Include Karma testrunner in Azure Pipelines
+
+```
+    - task: PublishTestResults@2
+        inputs:
+            testResultsFormat: 'JUnit'
+            testResultsFiles: '**/TESTS-*.xml'
+        displayName: 'Display Unit Test result'
+
+        - task: PublishCodeCoverageResults@1
+        inputs:
+            codeCoverageTool: 'Cobertura'
+            summaryFileLocation: '$(Build.SourcesDirectory)/coverage/**/cobertura.xml'
+```
+
+### Pre-requisites:
 
 1. Active NodeJS LTS (Long Term Support) version and associated supported NPM version.  (See https://nodejs.org)
 
-
+### Reference
+[Blog post on SCN](http://google.com)
