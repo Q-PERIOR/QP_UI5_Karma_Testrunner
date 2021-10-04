@@ -7,10 +7,19 @@
 |**Generation Platform**<br>Visual Studio Code|
 |**Service Type**<br>None|
 |**Application Title**<br>UI5 App including Karma Testrunner|
+|**Author**<br>Michael Christa|
+
 
 ## UI5-App including config for Karma testrunner 
 
-A Fiori application.
+This repository contains a simple UI5 application with few trivial QUnit tests defined. Further, there is a Karma config included which executes the UI5 tests and is also executable from a CI-Pipeline like Azure-Pipelines. The configuration is tested with Azure-Pipelines and the repository includes also the Azure-Pipeline configuration.
+
+### Install required modules
+In order to use Karma, you need to install required npm modules. Run the install from the root folder of the repository.
+
+```
+    npm install
+```
 
 ### Starting the generated app
 
@@ -50,4 +59,4 @@ or
 1. Active NodeJS LTS (Long Term Support) version and associated supported NPM version.  (See https://nodejs.org)
 
 ### Reference
-[Blog post on SCN](http://google.com)
+[Blog post on SCN](https://blogs.sap.com/?p=1405409&preview=true&preview_id=1405409)
