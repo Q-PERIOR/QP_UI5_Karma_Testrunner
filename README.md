@@ -59,4 +59,4 @@ or
 1. Active NodeJS LTS (Long Term Support) version and associated supported NPM version.  (See https://nodejs.org)
 
 ### Reference
-[Blog post on SCN](https://blogs.sap.com/?p=1405409&preview=true&preview_id=1405409)
+[Blog post on SCN](https://blogs.sap.com/2021/10/04/run-ui5-tests-with-karma-in-azure-pipelines/)
